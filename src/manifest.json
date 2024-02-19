@@ -1,0 +1,40 @@
+{
+  "name": "ext-button",
+  "version": "0.1",
+  "description": "ext-button",
+
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+
+ "action": {
+    "default_title": "Action Button"
+  },
+
+  "icons": {
+    "16": "icon/icon16.png",
+    "32": "icon/icon32.png",
+    "48": "icon/icon48.png",
+    "128": "icon/icon128.png"
+  },
+
+  "background": {
+    "service_worker": "/js/bg.js"
+  },
+
+  "content_scripts": [
+    {
+      "js": [
+        "/jq/jquery-3.7.1.min.js",
+        "/js/ext.js"
+       ],
+
+      "matches": [
+        "https://labs.dofufa.com/*"
+       ]
+    }
+  ],
+
+  "manifest_version": 3
+}
