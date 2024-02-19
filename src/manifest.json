@@ -31,7 +31,8 @@
        ],
 
       "matches": [
-        "https://labs.dofufa.com/*"
+        "https://jekyllrb.com/*",
+        "https://expressjs.com/*"
        ]
     }
   ],
